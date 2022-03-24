@@ -11,15 +11,9 @@
 {
     "table": {
         "scope": "",
-        "version": "",
+        "version": "0.0.1",
         "mainFile": "index.js",
-        "rootDir": "orbit-ui/table",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "orbit-ui/table"
     },
     "$schema-version": "14.9.0"
 }
