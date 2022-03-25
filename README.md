@@ -34,6 +34,7 @@ In theory you should be able to also now run the storybook build locally however
 
 ```
 bit compile
+```
 
 # Welcome to your Bit Workspace
 
