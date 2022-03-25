@@ -4,6 +4,9 @@
   border-collapse: separate;
   border-spacing: 0;
   border: var(--table-border, 1px solid #7F7F7F);
+  font-family: var(--table-font-family, 'Roboto', sans-serif);
+  font-size: var(--table-font-size, 12px);
+  font-weight: var(--table-font-weight, 400);
   width: 100%;
 }
 
@@ -46,6 +49,9 @@
 .table_pagination {
   padding: var(--table-pagination-padding, 0.5rem);
   text-align: center;
+  font-family: var(--table-pagination-font-family, 'Roboto', sans-serif);
+  font-size: var(--table-pagination-font-size, 12px);
+  font-weight: var(--table-pagination-font-weight, 400);
 }
 
 .table_pagination > button {
@@ -62,6 +68,9 @@
 }
 
 .table_input_filter {
+  font-family: var(--table-filter-font-family, 'Roboto', sans-serif);
+  font-size: var(--table-filter-font-size, 12px);
+  font-weight: var(--table-filter-font-weight, 400);
   border-color: var(--table-filter-border-color,#222222);
   border-width: 1px;
 }
