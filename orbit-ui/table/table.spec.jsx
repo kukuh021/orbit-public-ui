@@ -1,17 +1,13 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { getAllByText, render } from '@testing-library/react';
 import { BasicTable } from './table.composition';
 
 
 it('should render with the correct text', () => {
-  const { getByText } = render(<BasicTable />);
+  const { getAllByText } = render(<BasicTable />);
   
-  expect(getByText('Header 1')).toBeTruthy();
-  expect(getByText('Header 2')).toBeTruthy();
-  expect(getByText('data header 1 row 1')).toBeTruthy();
-  expect(getByText('data header 2 row 1')).toBeTruthy();
-  expect(getByText('data header 1 row 2')).toBeTruthy();
-  expect(getByText('data header 2 row 2')).toBeTruthy();
+  expect(getAllByText('Header')).toBeTruthy();
+  expect(getAllByText('Cell text')).toBeTruthy();
 });
 
 it('should have correct class', () => {

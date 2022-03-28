@@ -107,7 +107,7 @@ export const Table = ({ columns, data, tableProps, className }) => {
       return (
         <div className={styles.table_pagination} hidden={!isPaginationEnabled}>
           <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-            {'<<'}
+            {'First Page'}
           </button>{' '}
           <button onClick={() => previousPage()} disabled={!canPreviousPage}>
             {'<'}
@@ -122,7 +122,7 @@ export const Table = ({ columns, data, tableProps, className }) => {
             {'>'}
           </button>{' '}
           <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-            {'>>'}
+            {'Last Page'}
           </button>{' '}
         </div>
       );

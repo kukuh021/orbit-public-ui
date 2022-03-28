@@ -5,28 +5,88 @@ export const BasicTable = () => (
   <Table 
     columns={[
       {
-        Header: 'Header 1',
+        Header: 'Header',
         accessor: 'header1',
       },
       {
-        Header: 'Header 2',
+        Header: 'Header',
         accessor: 'header2',
+      },
+      {
+        Header: 'Header',
+        accessor: 'header3',
+      },
+      {
+        Header: 'Header',
+        accessor: 'header4',
       }
     ]} 
     data={[
       {
-        "header1": "data header 1 row 1",
-        "header2": "data header 2 row 1"
+        "header1": "Cell text",
+        "header2": "Cell text",
+        "header3": "Cell text",
+        "header4": "Cell text"
       },
       {
-        "header1": "data header 1 row 2",
-        "header2": "data header 2 row 2"
+        "header1": "Cell text",
+        "header2": "Cell text",
+        "header3": "Cell text",
+        "header4": "Cell text"
+      },
+      {
+        "header1": "Cell text",
+        "header2": "Cell text",
+        "header3": "Cell text",
+        "header4": "Cell text"
+      },
+      {
+        "header1": "Cell text",
+        "header2": "Cell text",
+        "header3": "Cell text",
+        "header4": "Cell text"
+      },
+      {
+        "header1": "Cell text",
+        "header2": "Cell text",
+        "header3": "Cell text",
+        "header4": "Cell text"
+      },
+      {
+        "header1": "Cell text second page",
+        "header2": "Cell text second page",
+        "header3": "Cell text second page",
+        "header4": "Cell text second page"
+      },
+      {
+        "header1": "Cell text second page",
+        "header2": "Cell text second page",
+        "header3": "Cell text second page",
+        "header4": "Cell text second page"
+      },
+      {
+        "header1": "Cell text second page",
+        "header2": "Cell text second page",
+        "header3": "Cell text second page",
+        "header4": "Cell text second page"
+      },
+      {
+        "header1": "Cell text second page",
+        "header2": "Cell text second page",
+        "header3": "Cell text second page",
+        "header4": "Cell text second page"
+      },
+      {
+        "header1": "Cell text second page",
+        "header2": "Cell text second page",
+        "header3": "Cell text second page",
+        "header4": "Cell text second page"
       }
     ]} 
     tableProps={{
       isGlobalFilterEnabled: true,
       isPaginationEnabled: true,
-      maxRows: 10,
+      maxRows: 5,
       paginationProps: {
         pageIndex: 0
       }
