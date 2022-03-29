@@ -18,7 +18,8 @@ export const Table = ({ columns, data, tableProps, className }) => {
         pageIndex: tableProps && tableProps.paginationProps ? tableProps.paginationProps.pageIndex: 0,
         isHeaderEnabled: tableProps && (typeof tableProps.isHeaderEnabled == "boolean") ? tableProps.isHeaderEnabled : true
       },
-      className
+      className,
+      disableSortRemove: true
     },
     useFilters,
     useGlobalFilter,
@@ -53,7 +54,16 @@ export const Table = ({ columns, data, tableProps, className }) => {
         {headerGroups.map(headerGroup => (
           <tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map(column => (
-              <th className={styles.table_thead_th}  {...column.getHeaderProps(column.getSortByToggleProps())}>
+              <th {...column.getHeaderProps(
+                [
+                  {
+                    className: styles.table_thead_th,
+                    style: {
+                      width: column.render('width')
+                    } 
+                  },
+                  column.getSortByToggleProps()
+                ])}>
                 {column.render('Header')}
                 <span>
                   {column.isSorted

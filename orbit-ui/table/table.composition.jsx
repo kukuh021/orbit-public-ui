@@ -7,18 +7,22 @@ export const BasicTable = () => (
       {
         Header: 'Header',
         accessor: 'header1',
+        width: '20%'
       },
       {
         Header: 'Header',
         accessor: 'header2',
+        width: '25%'
       },
       {
         Header: 'Header',
         accessor: 'header3',
+        width: '25%'
       },
       {
         Header: 'Header',
         accessor: 'header4',
+        width: '30%'
       }
     ]} 
     data={[
