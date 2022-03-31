@@ -62,7 +62,7 @@ export const Table = ({ columns, data, tableProps, className }) => {
                       width: column.render('width')
                     } 
                   },
-                  column.getSortByToggleProps()
+                  column.getSortByToggleProps({ title: column.isSorted ? column.isSortedDesc ? 'Click to sort ascending' : 'Click to sort descending' : 'Click to sort ascending' })
                 ])}>
                 {column.render('Header')}
                 <span>
