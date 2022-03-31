@@ -2,7 +2,7 @@
   border: var(--table-border, 0);
   margin: var(--table-margin, 0);
   padding: var(--table-padding, 0);
-  font-family: var(--table-font-family, 'Open', sans-serif);
+  font-family: var(--table-font-family, 'Open Sans', sans-serif);
   font-size: var(--table-font-size, 12px);
   font-weight: var(--table-font-weight, 400);
   font-style: var(--table-font-style, normal);
@@ -15,13 +15,13 @@
 .table_thead_th {
   background-color: var(--table-thead-th-background-color,#0091C1);
   color: var(--table-thead-th-color,#FFFFFF);
-  font-weight: var(--table-thead-th-weight, 600);
+  font-weight: var(--table-thead-th-font-weight, 600);
   padding: var(--table-thead-th-padding,0.5rem);
   text-align: left;
 }
 
 .table_thead_th:hover {
-  background-color: var(--table-tbody-tr-background-color,#005774);
+  background-color: var(--table-thead-th-hover-background-color,#005774);
 }
 
 .table_tbody_tr {
@@ -31,7 +31,7 @@
 
 .table_tbody_tr:hover,
 .table_tbody_tr:nth-child(2n):hover {
-  background-color: var(--table-tbody-tr-background-color,#D3E0F8);
+  background-color: var(--table-tbody-tr-hover-background-color,#D3E0F8);
 }
 
 .table_tbody_tr:nth-child(2n) {
@@ -51,7 +51,7 @@
 
 .table_pagination {
   padding: var(--table-pagination-padding, 0.5rem);
-  font-family: var(--table-pagination-font-family, 'Open', sans-serif);
+  font-family: var(--table-pagination-font-family, 'Open Sans', sans-serif);
   font-size: var(--table-pagination-font-size, 12px);
   font-weight: var(--table-pagination-font-weight, 400);
   color: var(--table-pagination-color,#010101);
@@ -77,7 +77,7 @@
 .table_input_filter {
   border: var(--table-filter-border, 1px solid #909194);
   border-radius: var(--filter-border-radius, 2px);
-  font-family: var(--table-filter-font-family, 'Open', sans-serif);
+  font-family: var(--table-filter-font-family, 'Open Sans', sans-serif);
   font-size: var(--table-filter-font-size, 12px);
   font-weight: var(--table-filter-font-weight, 400);
   padding: var(--table-filter-padding, 4px 8px);
